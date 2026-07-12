@@ -482,7 +482,7 @@ section h2{
 
 .coupon-container{
     display:flex;
-    gap:10px;
+    gap:5px;
 }
 
 .coupon-container input{
