@@ -3,6 +3,14 @@
 // ================================
 
 
+const couponInput = document.getElementById("couponCode");
+const couponMessage = document.getElementById("couponMessage");
+const applyCouponBtn = document.getElementById("applyCouponBtn");
+
+let discountPercent = 0;
+let couponApplied = false;
+
+
 const orderForm = document.getElementById("orderForm");
 const orderIdInput = document.getElementById("orderId");
 
