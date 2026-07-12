@@ -215,21 +215,23 @@ orderForm.addEventListener("submit", async function (e) {
     submitBtn.disabled = true;
     submitBtn.innerText = "Submitting...";
 
-    const formData = {
-        orderId: orderIdInput.value,
-        name,
-        whatsapp: `+91${whatsapp}`,
-        platform,
-        businessLink,
-        quantity,
-        wishType,
-        language,
-        notes,
-        totalPrice,
-        couponCode,
-        status: "New Lead",
-        source: "Website"
-    };
+   const formData = {
+    orderId: orderIdInput.value,
+    name: name,
+    whatsapp: `+91${whatsapp}`,
+    platform: platform,
+    businessLink: businessLink,
+    quantity: quantity,
+    wishType: wishType,
+    language: language,
+    notes: notes,
+    totalPrice: totalPrice,
+    couponCode: couponApplied
+        ? couponInput.value.toUpperCase()
+        : "No Coupon",
+    status: "New Lead",
+    source: "Website"
+};
 
     try {
 
