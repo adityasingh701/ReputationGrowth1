@@ -186,10 +186,9 @@ orderForm.addEventListener("submit", async function (e) {
     if (platformSelect.value === "justdial") platform = "Justdial";
 
     const wishType =
-        wishTypeSelect.value === "1"
-            ? "1 Line"
-            : wishTypeSelect.value === "2"
-            ? "2 Line";
+    wishTypeSelect.value === "1"
+        ? "1 Line"
+        : "2 Line";
     
 
     const quantity =
