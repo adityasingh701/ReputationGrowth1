@@ -802,3 +802,36 @@ section h2{
 
 
 
+.popup-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.download-btn,
+.close-btn{
+    flex:1;
+    height:65px;
+    border:none;
+    border-radius:18px;
+    color:white;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.download-btn{
+    background:linear-gradient(
+        135deg,
+        #00c853,
+        #00e676
+    );
+}
+
+.close-btn{
+    background:linear-gradient(
+        135deg,
+        #3268ff,
+        #7a3cff
+    );
+}
