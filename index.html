@@ -11,7 +11,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -346,13 +346,19 @@
             Our team will contact you on WhatsApp shortly.
         </p>
 
-        <button
-            class="close-btn"
+        <div class="popup-buttons">
+
+    <button class="download-btn"
+            onclick="downloadReceipt()">
+        Download
+    </button>
+
+    <button class="close-btn"
             onclick="closeSuccessModal()">
+        Close
+    </button>
 
-            Close
-
-        </button>
+        </div>
 
     </div>
 
